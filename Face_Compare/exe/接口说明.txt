@@ -1,0 +1,20 @@
+Face_Compare.dll为主接口；
+
+调用时将Face_Compare.dll动态载入，其他文件dll和model文件夹放到与Face_Compare.dll同一目录下；
+
+其中调用的方法为
+
+     int compare(const char* imagePath1,const char* imagePath2,float& sim,char* msg)；
+
+     /*
+        参数：
+             imagePath1,imagePath2为传入的两张图片绝对路径；
+
+             sim为相似度；相似度>0.6为同一个人，<0.6为不同人；
+
+             msg为返回的消息；                     
+        
+        返回值：
+             0：失败；1:成功；
+     */
+     

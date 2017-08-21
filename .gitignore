@@ -1,0 +1,12 @@
+/x64
+Debug
+Release
+testLib
+testNull
+ipch
+model
+*.filters
+*.user
+*.suo
+*.db
+*.sdf
